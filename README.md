@@ -34,4 +34,11 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
 # NextJs-Pra
+環境構築手順
+1. docker-compose up -d
+2. docker-compose exec next-tutorial bash
+3. tini -- npm run dev
+4. http://localhost:12000/ にアクセス (compose.yamlで定義したため)
+
