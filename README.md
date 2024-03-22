@@ -39,6 +39,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 環境構築手順
 1. docker-compose up -d
 2. docker-compose exec next-tutorial bash
-3. tini -- npm run dev
-4. http://localhost:12000/ にアクセス (compose.yamlで定義したため)
+3. npm i && npm cache clean -f (初回時のみ)
+4. tini -- npm run dev
+5. http://localhost:12000/ にアクセス (compose.yamlで定義したため)
 
