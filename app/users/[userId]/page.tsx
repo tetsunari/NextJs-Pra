@@ -1,5 +1,6 @@
 import { users } from "@/app/lib/users";
-import Link from "next/link"
+import Link from "next/link";
+import { notFound } from "next/navigation";
 
 type Props = {
   params: { userId: string };
@@ -7,6 +8,9 @@ type Props = {
 
 export default function UserPage(props: Props) {
   const user = users[Number(props.params.userId)];
+  if (user === undefined) {
+    notFound();
+  }
   return (
     <>
       <h1 className="text-lg border-b pb-1 mb-1">
